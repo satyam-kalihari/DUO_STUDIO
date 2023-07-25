@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* color: #ffffff; */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size:cover ;
+    mix-blend-mode: difference;
+}
+
+#main {
+  background-color: black;
+}
+
+#nav {
+  /* height: 100px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: transparent;
+  position: fixed;
+  mix-blend-mode: difference;
+  z-index: 102;
+  color: #ffffff;
+}
+
+#nav img {
+  height: 30px;
+}
+
+#menu {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  gap: 9px;
+}
+
+#dot {
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+#page1 {
+  min-height: 100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9;
+  padding-top: 16vw;
+  color: #ffffff;
+}
+
+#page1 h1 {
+  font-size: 7vw;
+  font-weight: 400;
+  font-family: pp mori;
+}
+
+#page1 p {
+  text-align: center;
+  width: 32%;
+  margin-top: 70px;
+}
+
+#page1 video {
+  width: 65%;
+  margin-top: 6vw;
+  position: relative;
+}
+
+#page2 {
+  min-height: 100vh;
+  color: black;
+  position: relative;
+  padding: 90px 0px;
+  border-bottom: 1.5px solid #000;
+}
+
+/* #page2_container1{
+
+} */
+
+.page2_lines {
+  font-size: 3vw;
+  font-weight: 600;
+  font-family: pp mori;
+  /* mix-blend-mode: difference; */
+  line-height: 30px;
+  padding: 5px 40px;
+}
+
+.page2_lines span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#page2_container2 {
+  display: flex;
+  justify-content: space-between;
+  /* position: relative; */
+}
+
+#page2_rows_container {
+  height: 40vw;
+  width: 55%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#page2 .row {
+  margin: 0px 100px;
+  padding: 20px;
+  border-bottom: 1.5px solid #000;
+}
+
+#page2_rows h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#page2_rows_container p {
+  padding-top: 10px;
+  width: 70%;
+  font-weight: 400;
+}
+
+#page2_image {
+  height: 45vw;
+  width: 50%;
+  align-self: self-end;
+  /* background-color: blue; */
+  background-image: url(https://d33wubrfki0l68.cloudfront.net/20696575c48be579c70798eacdea1854f171b7cb/fda6d/assets/services/services__branding@1152.webp);
+  background-size: cover;
+  position: absolute;
+  top: 16%;
+  right: 0;
+  transition: all ease 0.8s;
+}
+
+#page3 {
+  min-height: 100vh;
+  color: black;
+  position: relative;
+  border-bottom: 2px solid #000000;
+  transition: all ease 0.5s;
+}
+
+#page3 h1 {
+  margin: 60px 60px;
+  font-size: 120px;
+  font-weight: 300;
+  line-height: 110px;
+  width: 30%;
+}
+
+.page3_container {
+  position: relative;
+  height: 50vw;
+  display: flex;
+  /* background-color: darkslategray; */
+}
+
+#video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  overflow-y: hidden;
+}
+
+#video::-webkit-scrollbar {
+  display: none;
+}
+#video video {
+  left: -50%;
+  height: 88%;
+  float: left;
+  position: absolute;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#video_title {
+  position: absolute;
+  bottom: 5px;
+  font-weight: 300;
+  font-size: 20px;
+  mix-blend-mode: difference;
+}
+
+#page3_container1 {
+  right: 50px;
+  top: 16%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#page3_image1,
+#page3_image2 {
+  height: 88%;
+  width: 30%;
+  background-color: black;
+}
+
+#page3_container2 {
+  left: 100px;
+}
+
+#page3_image1 {
+  background-image: url(https://d33wubrfki0l68.cloudfront.net/d35ec8e58856def2dce8d8fec3e11bbb15943c70/a2198/assets/home/home__mgny-thumbnail.webp);
+  background-size: cover;
+}
+
+#page3_container3 {
+  right: 10%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+#page3_image2 {
+  background-image: url(https://d33wubrfki0l68.cloudfront.net/0c4a7971523f0f5143d6abec176eb8942fab0173/a2700/assets/home/home-casestudy-finturity.webp);
+  background-size: cover;
+}
+
+#page3_container4 {
+  left: 150px;
+}
+
+#page3_about {
+  position: absolute;
+  width: 350px;
+  bottom: 5%;
+  right: 10%;
+  font-size: 18px;
+}
+
+#page3_about button {
+  margin-top: 15px;
+  padding: 7px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #deb2f2;
+}
+
+#page4 {
+  height: 100vh;
+  background-color: #ffffff;
+  transition: all ease 0.5s;
+}
