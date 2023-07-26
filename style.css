@@ -286,4 +286,57 @@ body::-webkit-scrollbar {
   height: 100vh;
   background-color: #ffffff;
   transition: all ease 0.5s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+.elem {
+  padding: 30px;
+}
+
+
+.elem_line1_image {
+  position: absolute;
+  height: 250px;
+  opacity: 0;
+  transition: all ease-out 0.5s;
+}
+
+.elem:hover img {
+  opacity: 1;
+  transform: translateY(-10%);
+}
+
+#elem_line1_image1 {
+  top: 10%;
+  left: 10%;
+}
+
+#elem_line1_image2 {
+  bottom: 3%;
+  right: 10%;
+}
+
+#elem_line1_text {
+  height: 100px;
+  overflow: hidden;
+}
+
+#elem_line1_text h1 {
+  font-size: 80px;
+  /* align-self: center; */
+  position: relative;
+  z-index: 9;
+  mix-blend-mode: difference;
+  transition: all ease-out 0.3s;
+  font-weight: 400;
+}
+
+#elem_line1_text:hover h1 {
+  transform: translateY(-100%);
+  color: #edbfff;
 }
