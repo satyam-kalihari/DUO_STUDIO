@@ -34,18 +34,34 @@ function init() {
 
 // init();
 
-var crsr = document.querySelector(".cursor");
+var cusr = document.querySelector(".cursor");
 var main = document.querySelector("#main");
 document.addEventListener("mousemove", function (dets) {
-  crsr.style.left = dets.x + 20 + "px";
-  crsr.style.top = dets.y + 20 + "px";
+  cusr.style.left = dets.x + 10 + "px";
+  cusr.style.top = dets.y + 10 + "px";
 });
 
+//MOUSE ENTER ON VIDEO
+var video = document.querySelector("#video");
+video.addEventListener("mouseenter", () => {
+  cusr.style.height = 30 + "px";
+  cusr.style.width = 100 + "px";
+  cusr.style.borderRadius = 30 + "px";
+  cusr.style.zIndex = 10;
+});
+var video = document.querySelector("#video");
+video.addEventListener("mouseleave", () => {
+  cusr.style.height = 20 + "px";
+  cusr.style.width = 20 + "px";
+  cusr.style.borderRadius = 50 + "%";
+  cusr.style.zIndex = 9;
+});
+
+//PAGE 2
 var row1 = document.querySelector("#row1");
 var row2 = document.querySelector("#row2");
 var row3 = document.querySelector("#row3");
 var imageDiv = document.querySelector("#page2_image");
-console.log(row1, row2, row3, imageDiv);
 
 row1.addEventListener("mouseover", () => {
   imageDiv.style.backgroundImage =
@@ -60,6 +76,71 @@ row2.addEventListener("mouseenter", () => {
 row3.addEventListener("mouseover", () => {
   imageDiv.style.backgroundImage =
     "url('https://d33wubrfki0l68.cloudfront.net/d8139cdf83ac971c8cbd2a793ed4465ece04ea45/6aca7/assets/services/services__content@1152.webp')";
+});
+
+//PAGE 3
+function mouseEnter_page5(image) {
+  cusr.style.height = 300 + "px";
+  cusr.style.width = 300 + "px";
+  cusr.style.borderRadius = 0 + "px";
+  cusr.style.mixBlendMode = "normal";
+  cusr.style.transition = "all ease 0.5s";
+  cusr.style.backgroundImage = "url('" + image + "')";
+}
+
+function mouseleave_page5() {
+  cusr.style.height = 20 + "px";
+  cusr.style.width = 20 + "px";
+  cusr.style.borderRadius = 50 + "%";
+  cusr.style.zIndex = 9;
+  cusr.style.mixBlendMode = "difference";
+  cusr.style.transition = "all ease 0s";
+  cusr.style.backgroundImage = "url('')";
+}
+
+var div1 = document.querySelector("#page5_line1");
+var div2 = document.querySelector("#page5_line2");
+var div3 = document.querySelector("#page5_line3");
+var div4 = document.querySelector("#page5_line4");
+var div5 = document.querySelector("#page5_line5");
+
+div1.addEventListener("mouseenter", () => {
+  mouseEnter_page5("vlado-paunovic-iBG594vhR1k-unsplash.jpg");
+});
+div1.addEventListener("mouseleave", () => {
+  mouseleave_page5();
+});
+//
+div2.addEventListener("mouseenter", () => {
+  mouseEnter_page5("austin-distel-tLZhFRLj6nY-unsplash.jpg");
+});
+div2.addEventListener("mouseleave", () => {
+  mouseleave_page5();
+  //
+});
+div3.addEventListener("mouseenter", () => {
+  mouseEnter_page5(
+    "Shlet_maximalism_hyper-detailed_anime_beautiful_lush_forest_vap_7e08f953-b922-4f07-b8a3-3b818fac85de.jpg"
+  );
+});
+div3.addEventListener("mouseleave", () => {
+  mouseleave_page5();
+});
+//
+div4.addEventListener("mouseenter", () => {
+  mouseEnter_page5(
+    "Shlet_maximalism_hyper-detailed_anime_vaporwave_vibes_lofi_retr_cde21297-696b-4266-ad0b-acf7e3620959.jpg"
+  );
+});
+div4.addEventListener("mouseleave", () => {
+  mouseleave_page5();
+});
+//
+div5.addEventListener("mouseenter", () => {
+  mouseEnter_page5("alexander-grey-TZZwC_xsClY-unsplash.jpg");
+});
+div5.addEventListener("mouseleave", () => {
+  mouseleave_page5();
 });
 
 gsap.to("#main", {

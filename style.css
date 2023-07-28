@@ -13,6 +13,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -25,7 +26,7 @@ body::-webkit-scrollbar {
   border-radius: 50%;
   position: fixed;
   background-color: #edbfff;
-  z-index: 8;
+  z-index: 10;
   transition: background-image ease 0.5s;
   background-position: center;
   background-size: cover;
@@ -108,6 +109,7 @@ body::-webkit-scrollbar {
   position: relative;
   padding: 90px 0px;
   border-bottom: 1.5px solid #000;
+  z-index: 9;
 }
 
 /* #page2_container1{
@@ -131,13 +133,11 @@ body::-webkit-scrollbar {
 #page2_container2 {
   display: flex;
   justify-content: space-between;
-  /* position: relative; */
 }
 
 #page2_rows_container {
   height: 40vw;
   width: 55%;
-  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -178,7 +178,8 @@ body::-webkit-scrollbar {
   color: black;
   position: relative;
   border-bottom: 2px solid #000000;
-  transition: all ease 0.5s;
+  transition: all ease 0.2s;
+  z-index: 9;
 }
 
 #page3 h1 {
@@ -285,28 +286,27 @@ body::-webkit-scrollbar {
 #page4 {
   height: 100vh;
   background-color: #ffffff;
-  transition: all ease 0.5s;
+  transition: all ease 0.2s;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 9;
+  z-index: 8;
 }
 
 .elem {
   padding: 30px;
 }
 
-
-.elem_line1_image {
+.elem_line_image {
   position: absolute;
   height: 250px;
   opacity: 0;
   transition: all ease-out 0.5s;
 }
 
-.elem:hover img {
+#elem_line1:hover img {
   opacity: 1;
   transform: translateY(-10%);
 }
@@ -321,12 +321,13 @@ body::-webkit-scrollbar {
   right: 10%;
 }
 
-#elem_line1_text {
-  height: 100px;
+.elem_line_text {
+  height: 95px;
   overflow: hidden;
+  text-align: center;
 }
 
-#elem_line1_text h1 {
+.elem_line_text h1 {
   font-size: 80px;
   /* align-self: center; */
   position: relative;
@@ -336,7 +337,86 @@ body::-webkit-scrollbar {
   font-weight: 400;
 }
 
-#elem_line1_text:hover h1 {
+.elem_line:hover h1 {
   transform: translateY(-100%);
   color: #edbfff;
 }
+
+/* LINE 2  */
+
+#elem_line2:hover img {
+  opacity: 1;
+  transform: translateY(-10%);
+}
+
+#elem_line2_image1 {
+  top: 35%;
+  left: 20%;
+  scale: 1.5;
+}
+
+#elem_line2_image2 {
+  top: 25%;
+  right: 20%;
+  scale: 1.3;
+}
+
+/* LINE 3 */
+
+#elem_line3:hover img {
+  opacity: 1;
+  transform: translateY(-10%);
+}
+
+#elem_line3_image1 {
+  top: 50%;
+  left: 20%;
+  scale: 1.2;
+}
+
+#elem_line3_image2 {
+  top: 10%;
+  right: 17%;
+  scale: 1.1;
+  /* transform: scale(-1.3); */
+}
+
+#page5 {
+  height: 100vh;
+  background-color: #000;
+  color: #ffffff;
+  position: relative;
+}
+
+h1 > span {
+  color: #edbfff;
+}
+
+#page5_div > h1 {
+  font-weight: 400;
+  font-size: 50px;
+  border-bottom: o.7px solid #ffffff;
+}
+
+#page5_div {
+  /* margin-top: 10%; */
+  margin: 0% 15%;
+  padding-top: 8%;
+}
+
+.page5_line {
+  height: 70px;
+  border-bottom: 1.5px solid #ffffff;
+  color: #ffffff8c;
+}
+
+.page5_line, .page5_line_right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page5_line_right{
+  width: 35%;
+}
+
