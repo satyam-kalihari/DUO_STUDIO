@@ -410,13 +410,64 @@ h1 > span {
   color: #ffffff8c;
 }
 
-.page5_line, .page5_line_right{
+.page5_line,
+.page5_line_right {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.page5_line_right{
+.page5_line_right {
   width: 35%;
 }
 
+#page6 {
+  height: 100vh;
+  background-color: #edbefd;
+  padding: 50px;
+}
+
+#page6_div1 {
+  height: 25vw;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#page6_div1 h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+#page6_div1 #touch {
+  height: 200px;
+  width: 200px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(237, 100, 253);
+}
+
+#page6_div2 {
+  padding: 20px;
+  width: 50%;
+}
+
+#page6_div2 #about_us {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.about_last {
+  grid-row: auto;
+  gap: 20px;
+  font-weight: 100;
+  font-size: 12px;
+}
