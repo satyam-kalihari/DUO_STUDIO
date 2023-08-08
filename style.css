@@ -31,11 +31,58 @@ body::-webkit-scrollbar {
   background-position: center;
   background-size: cover;
   mix-blend-mode: difference;
-  transition: left linear 0.5s top linear 0.5s;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
 }
 
 #main {
   background-color: black;
+  position: relative;
+}
+
+#nav_page {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  z-index: 99;
+  background-color: #deb2f2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  display: none;
+  transition: all ease 1s;
+}
+
+#nav_page::-webkit-scrollbar {
+  display: none;
+}
+
+#nav_div1 {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#nav_div1 h1 {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 120px;
+  font-weight: 900;
+  transition: all linear 1s;
+  margin: 20px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 #nav {
@@ -112,9 +159,9 @@ body::-webkit-scrollbar {
   z-index: 9;
 }
 
-/* #page2_container1{
-
-} */
+#page2_container1 {
+  position: relative;
+}
 
 .page2_lines {
   font-size: 3vw;
@@ -131,6 +178,7 @@ body::-webkit-scrollbar {
 }
 
 #page2_container2 {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -450,6 +498,7 @@ h1 > span {
   justify-content: center;
   border-radius: 50%;
   background-color: rgb(237, 100, 253);
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
 }
 
 #page6_div2 {

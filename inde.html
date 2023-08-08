@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="loco.css" /> -->
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,20 +13,28 @@
   </head>
   <body>
     <div class="cursor"></div>
+    <div id="nav_page">
+      <div id="nav_div1" class="nav_div">
+        <h1 class="nav_div_h1"></h1>
+        <h1 class="nav_div_h1"></h1>
+        <h1 class="nav_div_h1"></h1>
+        <h1 class="nav_div_h1"></h1>
+      </div>
+    </div>
     <div id="nav">
       <img
         src="https://d33wubrfki0l68.cloudfront.net/439bf938233c24af021ffe6d206cd42f546e1143/ff4ed/assets/logo.svg"
         alt=""
       />
       <div id="menu">
-        <p>
+        <p menu-name="HOME">
           <u> Home,</u>
         </p>
-        <p>Work,</p>
-        <p>Services,</p>
-        <p>Studio,</p>
-        <p>Journal,</p>
-        <p>Contact</p>
+        <p menu-name="WORK">Work,</p>
+        <p menu-name="SERVICES">Services,</p>
+        <p menu-name="STUDIO">Studio,</p>
+        <p menu-name="JOURNAL">Journal,</p>
+        <p menu-name="CONTACT">Contact</p>
       </div>
       <div id="dot"></div>
     </div>
@@ -231,19 +240,28 @@
       <div id="page6">
         <div id="page6_div1">
           <h1>Start a project</h1>
-          <div id="touch">Get In Touch</div>
+          <div id="touch" class="big_circle">Get In Touch</div>
         </div>
         <div id="page6_div2">
           <p>create an experience that's as remarkable as your business.</p>
           <div id="about_us">
-            <div id="about1" class="about_last"><p>MAIN HUBS</p><p>DC, Maryland, Virginia</p></div>
-            <div id="about2" class="about_last"><p>GENERAL INQUIRIES</p><p>heno@duo-studio.com</p></div>
-            <div id="about3" class="about_last"><p>FOLLOW US</p><p>Instagram, LinkedIn</p></div>
+            <div id="about1" class="about_last">
+              <p>MAIN HUBS</p>
+              <p>DC, Maryland, Virginia</p>
+            </div>
+            <div id="about2" class="about_last">
+              <p>GENERAL INQUIRIES</p>
+              <p>heno@duo-studio.com</p>
+            </div>
+            <div id="about3" class="about_last">
+              <p>FOLLOW US</p>
+              <p>Instagram, LinkedIn</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
